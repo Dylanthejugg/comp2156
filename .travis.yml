@@ -1,5 +1,6 @@
 language: node_js
 node_js:
+<<<<<<< HEAD
   - "stable"
 dist: focal
 deploy:
@@ -12,3 +13,14 @@ deploy:
 
 
 
+=======
+ - "stable"
+ dist: focal
+deploy:
+ provider: pages
+ skip_cleanup: true
+ github_token: $github_token
+ local_dir: build
+ on:
+ branch: main 
+>>>>>>> 45c68e4d35814a399dae26ac5334a910b44eb2ad
